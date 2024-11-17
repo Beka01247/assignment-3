@@ -1,0 +1,15 @@
+.main-container {
+  padding: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+p {
+  text-align: center;
+  color: #7f8c8d;
+}

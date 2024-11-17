@@ -1,0 +1,40 @@
+.user-form {
+  margin-top: 2em;
+}
+
+.user-form h2 {
+  color: #2c3e50;
+}
+
+.user-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-form form div {
+  margin-bottom: 1em;
+}
+
+.user-form form label {
+  margin-bottom: 0.5em;
+  color: #34495e;
+}
+
+.user-form form input {
+  padding: 0.5em;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+}
+
+.user-form form button {
+  padding: 0.75em 1.5em;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-form form button:hover {
+  background-color: #2ecc71;
+}

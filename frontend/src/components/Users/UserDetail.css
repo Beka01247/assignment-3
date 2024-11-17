@@ -1,0 +1,17 @@
+.user-detail {
+  margin-top: 2em;
+}
+
+.user-detail h2 {
+  color: #2c3e50;
+}
+
+.user-detail p {
+  margin-bottom: 0.5em;
+  color: #7f8c8d;
+}
+
+.user-detail p span {
+  font-weight: bold;
+  color: #34495e;
+}

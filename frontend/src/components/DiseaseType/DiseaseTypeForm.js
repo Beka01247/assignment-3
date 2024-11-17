@@ -53,7 +53,7 @@ const DiseaseTypeForm = () => {
             value={diseaseType.id}
             onChange={handleChange}
             required
-            disabled={!!id} // Disable ID field when editing
+            disabled={!!id} 
           />
         </div>
         <div>

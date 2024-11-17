@@ -52,7 +52,7 @@ const PatientForm = () => {
             value={patient.email}
             onChange={handleChange}
             required
-            disabled={!!email} // Disable email field when editing
+            disabled={!!email} 
           />
         </div>
         <button type="submit">{email ? 'Update' : 'Create'}</button>

@@ -1,85 +1,68 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# Full-Stack Healthcare Management Application
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## **Report**
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+### **Project Overview**
+This project is a full-stack web application that manages and visualizes healthcare-related data, including patients, diseases, countries, records, and specializations. The application implements essential CRUD functionality for all related entities, leveraging a robust backend and an interactive frontend.
 
-## Description
+- **Live Application:** [Assignment-3 Healthcare App](https://assignment-3-4rs4-a7oepycg5-bekarys-projects-3464c0d6.vercel.app)
+- **Source Code:** [GitHub Repository](https://github.com/Beka01247/assignment-3)
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### **Tools Used**
 
-## Project setup
+#### 1. Backend:
+- **NestJS:** Backend framework chosen for its modular architecture, scalability, and built-in support for dependency injection.
+- **Prisma ORM:** Database management and migrations offering type safety and easy-to-read query syntax.
+- **PostgreSQL:** Relational database selected for its efficient data organization and querying capabilities.
 
-```bash
-$ npm install
-```
+#### 2. Frontend:
+- **React:** Frontend framework. React with React Router was chosen to build a responsive and modular user interface.
+- **Axios:** HTTP client for API interactions. Used to retrieve and manipulate data dynamically via RESTful APIs.
+- **CSS Modules:** Reused simple, consistent CSS modules for styling to maintain uniformity across components.
 
-## Compile and run the project
+#### 3. Development and Deployment:
+- **Vercel:** Hosting for both frontend and backend. Ensured automatic builds and scalability.
+- **Docker:** Containerization for consistent development and deployment environments.
+- **Git & GitHub:** Used for version control and collaboration.
 
-```bash
-# development
-$ npm run start
+#### 4. Testing and Debugging:
+- **Postman:** For API testing.
+- **Vercel Logs:** Monitoring deployed application for errors and logs.
 
-# watch mode
-$ npm run start:dev
+---
 
-# production mode
-$ npm run start:prod
-```
+## **Installation Instructions**
 
-## Run tests
+### Backend and Database
+1. Run `npm install` in the root folder to install dependencies.
+2. Create a `.env` file in the root folder with the following content:
+   ```env
+   DATABASE_URL=postgres://<username>:<password>@<host>:<port>/<database>
+3. Run “npm run start:dev”.
 
-```bash
-# unit tests
-$ npm run test
+### Frontend
+1.	Run “cd frontend” to go for frontend folder.
+2.	Run “npm install”.
+3.	Run “npm start”.
 
-# e2e tests
-$ npm run test:e2e
+---
 
-# test coverage
-$ npm run test:cov
-```
+### **Challenges Encountered**
 
-## Resources
+#### 1. Deployment on Vercel:
+- **Challenge:** Vercel's caching of dependencies led to issues with outdated Prisma Client.
+- **Solution:** Added `prisma generate` as a post-install script and ensured the `prisma` directory was included in the deployment.
 
-Check out a few resources that may come in handy when working with NestJS:
+---
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+### **Outcome**
+The project successfully fulfills its objectives:
+- Provides CRUD functionality for all required entities.
+- Ensures seamless integration between the frontend, backend, and database.
+- Deployed to a production-ready environment, accessible globally.
+- Handles challenges gracefully through well-thought-out solutions.
+- Successfully implements **Part 1** and **Part 2** of the assessment.
 
-## Support
+---
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+This project demonstrates a strong understanding of full-stack application development, showcasing the ability to design, implement, and deploy a scalable and maintainable system.

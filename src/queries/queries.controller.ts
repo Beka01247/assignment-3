@@ -42,9 +42,6 @@ export class QueriesController {
   async deleteUsersWithSubstringInName() {
     return this.queriesService.deleteUsersWithSubstringInName();
   }
-
-  
-
   
   @Get('top-countries-total-patients')
   async getTopCountriesWithHighestPatients() {
